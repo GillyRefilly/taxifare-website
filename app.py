@@ -77,7 +77,6 @@ st.write('Your pickup address translates to:', lat_p,lon_p)
 st.write('Your pickup address translates to:', lat_d,lon_d)
 st.write('Your passenger number is:', number)
 
-
 url = 'https://taxifare.lewagon.ai/predict'
 
 
