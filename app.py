@@ -33,7 +33,7 @@ city_p = st.sidebar.text_input("City", "Toronto")
 province_p = st.sidebar.text_input("Province/State", "Ontario")
 country_p = st.sidebar.text_input("Country", "Canada")
 
-geolocator = Nominatim(user_agent="GTA Lookup",timeout=100)
+geolocator = Nominatim(user_agent="http",timeout=100)
 geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
 location_p = geolocator.geocode(street_p+", "+city_p+", "+province_p+", "+country_p)
 
@@ -50,7 +50,7 @@ city_d = st.sidebar.text_input("City","Berlin")
 province_d = st.sidebar.text_input("Province/State","Berlin")
 country_d = st.sidebar.text_input("Country","Germany")
 
-geolocator = Nominatim(user_agent="GTA Lookup",timeout=100)
+geolocator = Nominatim(user_agent="http",timeout=100)
 geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
 location_d = geolocator.geocode(street_d+", "+city_d+", "+province_d+", "+country_d)
 
