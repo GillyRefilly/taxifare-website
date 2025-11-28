@@ -59,7 +59,6 @@ lon_d = location_d.longitude
 # lat_d = st.sidebar.number_input('Insert your dropoff latitutde')
 # lon_d = st.sidebar.number_input('Insert your dropoff longitutdakjhsfkwh')
 
-
 map_data = pd.DataFrame({'lat': [lat_p,lat_d], 'lon': [lon_p,lon_d]})
 st.map(map_data)
 
