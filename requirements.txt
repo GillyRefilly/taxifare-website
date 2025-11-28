@@ -1,3 +1,12 @@
 streamlit
 pandas
+pyproj
+pyogrio
+fiona
+scipy
+matplotlib
+geopandas
 requests
+datetime
+shapely
+streamlit_extras
